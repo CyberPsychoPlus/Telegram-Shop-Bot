@@ -5,7 +5,7 @@ from aiogram.types import Message, CallbackQuery
 # Імпорт власної бібліотеки
 import keyboards as kb
 
-bot = Bot(token='6226072857:AAHCvXbN8iuyeh9TQ80RVR8ZPFuK-hJlyKI')
+bot = Bot(token='Your token bot')
 dp = Dispatcher()
 
 
