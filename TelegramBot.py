@@ -5,7 +5,7 @@ from aiogram.types import Message, CallbackQuery
 # Імпорт власної бібліотеки
 import keyboards as kb
 
-bot = Bot(token='Your token bot')
+bot = Bot(token='6226072857:AAHuGs192tdGtFLfFes0odt9lB0qpld1zWc')
 dp = Dispatcher()
 
 
@@ -30,6 +30,18 @@ async def catalog(message: Message):
 
 @dp.callback_query(F.data == 'Bitcoin')
 async def cb_bitcoin(callback: CallbackQuery):
+    await callback.answer(f'Ви обрали {callback.data}', show_alert=True)
+    await callback.message.answer(f'Ви обрали {callback.data}')
+
+
+@dp.callback_query(F.data == 'Ethereum')
+async def cb_eth(callback: CallbackQuery):
+    await callback.answer(f'Ви обрали {callback.data}', show_alert=True)
+    await callback.message.answer(f'Ви обрали {callback.data}')
+
+
+@dp.callback_query(F.data == 'Dogecoin')
+async def cb_doge(callback: CallbackQuery):
     await callback.answer(f'Ви обрали {callback.data}', show_alert=True)
     await callback.message.answer(f'Ви обрали {callback.data}')
 
