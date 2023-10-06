@@ -27,7 +27,7 @@ socials = InlineKeyboardMarkup(inline_keyboard=[
 
 # Створення каталогу товарів
 catalog = InlineKeyboardMarkup(inline_keyboard=[
-    # Товари такж для приклау і можуть бути замінені
+    # Товари також для приклау і можуть бути замінені
     [InlineKeyboardButton(text='Bitcoin', callback_data='Bitcoin')],
     [InlineKeyboardButton(text='Ethereum', callback_data='Ethereum')],
     [InlineKeyboardButton(text='Dogecoin', callback_data='Dogecoin')]
