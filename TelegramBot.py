@@ -31,19 +31,19 @@ async def catalog(message: Message):
 @dp.callback_query(F.data == 'Bitcoin')
 async def cb_bitcoin(callback: CallbackQuery):
     await callback.answer(f'Ви обрали {callback.data}', show_alert=True)
-    await callback.message.answer(f'Ви обрали {callback.data}')
+    await callback.message.answer('...інформація про товар та як його замовити.')
 
 
 @dp.callback_query(F.data == 'Ethereum')
 async def cb_eth(callback: CallbackQuery):
     await callback.answer(f'Ви обрали {callback.data}', show_alert=True)
-    await callback.message.answer(f'Ви обрали {callback.data}')
+    await callback.message.answer('...інформація про товар та як його замовити.')
 
 
 @dp.callback_query(F.data == 'Dogecoin')
 async def cb_doge(callback: CallbackQuery):
     await callback.answer(f'Ви обрали {callback.data}', show_alert=True)
-    await callback.message.answer(f'Ви обрали {callback.data}')
+    await callback.message.answer('...інформація про товар та як його замовити.')
 
 
 # Обробник інформації
